@@ -1,0 +1,20 @@
+<ion-content>
+
+  
+    <ion-label position="floating">Todo</ion-label>
+    <ion-input type="text"[(ngModel)]="tObj.name" placeholder="add item"></ion-input>
+  
+    <ion-label position="floating">Load Image</ion-label>
+
+  <div class="container">
+    
+   
+    <input type="file" (change)="($event)" [(ngModel)]="tObj.image"><br><br>
+   
+
+</div>
+<br>
+  <ion-button (click)="addTodo()">Add</ion-button>
+
+
+</ion-content>
